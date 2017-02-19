@@ -66,6 +66,14 @@ class TailoredAudience extends Connection{
 	}
 
 	/**
+	 * Reset members property to empty array
+	 */
+	public function resetEmails()
+	{
+		$this->members = [];
+	}
+
+	/**
 	 * Set effective date for membership
 	 *
 	 * Use this before setting members if you dont' want it to be now
