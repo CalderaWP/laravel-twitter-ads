@@ -7,6 +7,9 @@ use Hborras\TwitterAdsSDK\TwitterAds;
 
 /**
  * Class TailoredAudience
+ *
+ * Create a tailored audience
+ *
  * @package calderawp\twitter\ads
  */
 class TailoredAudience extends Connection{

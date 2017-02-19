@@ -7,6 +7,9 @@ use Hborras\TwitterAdsSDK\TwitterAds;
 
 /**
  * Class Connection
+ *
+ * Base class for connecting to twitter ads accounts
+ *
  * @package calderawp\twitter\ads
  */
 abstract  class Connection {
@@ -29,23 +32,34 @@ abstract  class Connection {
 
 	}
 
+	/**
+	 * Set the account property with instance of TwitterAds\Account
+	 */
 	protected function setAccount()
 	{
 		$this->account = $this->api->getAccounts($this->getAccountId() );
 
 	}
 
+	/**
+	 * @return TwitterAds\Account
+	 */
 	protected function getAccount() : TwitterAds\Account
 	{
 		return $this->account;
 	}
 
+	/**
+	 * @param string $accountId
+	 */
 	public function setAccountId( string $accountId )
 	{
 		$this->accountId = $accountId;
 	}
 
-
+	/**
+	 * @return string
+	 */
 	protected function getAccountId() : string
 	{
 		return $this->accountId;

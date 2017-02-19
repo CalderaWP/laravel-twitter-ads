@@ -1,10 +1,5 @@
 <?php
-/**
- * @TODO What this does
- *
- * @package ac2
- * Copyright 2017 Josh Pollock <Josh@CalderaWP.com
- */
+
 
 namespace calderawp\twitter\ads;
 use Hborras\TwitterAdsSDK\TwitterAds;
@@ -16,7 +11,11 @@ use Hborras\TwitterAdsSDK\TwitterAds;
  */
 class Factory {
 
-
+	/**
+	 * Create Twitter Ads API from config
+	 *
+	 * @return TwitterAds
+	 */
 	public static function api() : TwitterAds
 	{
 		return new TwitterAds(
