@@ -22,7 +22,7 @@
    
     "autoload": {
         "psr-4": {
-            "calderawp\\mailchimp\\twitter\\ads\\": "src"
+            "calderawp\\twitter\\ads\\": "src"
         }
     }
 }
