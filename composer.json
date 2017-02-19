@@ -1,0 +1,28 @@
+{
+    "name": "calderawp/laravel-twitter-ads",
+    "description": "Manage Twitter ads in Laravel",
+    "keywords": [
+        "laravel",
+        "ads",
+        "twitter"
+    ],
+    "license": "GPLv2+",
+    "authors": [
+        {
+            "name": "Josh Pollock",
+            "email": "josh@calderawp.com",
+            "homepage": "https://joshpress.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~7.0",
+        "hborras/twitter-php-ads-sdk": "*"
+    },
+   
+    "autoload": {
+        "psr-4": {
+            "calderawp\\mailchimp\\twitter\\ads\\": "src"
+        }
+    }
+}
