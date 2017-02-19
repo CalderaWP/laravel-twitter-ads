@@ -27,11 +27,16 @@ class TailoredAudience extends Connection{
 	/**
 	 * Add members by email
 	 *
-	 * @param array $emails Array of emails
+	 * @param array $emails Array of emails No more than 100 at a time.
+	 *
 	 * @param string $audienceName The name of tailored audience to add to.
+	 * @throws \Exception
 	 */
 	public function addMembers( array  $emails, string $audienceName )
 	{
+		if( count( $emails ) > 100 ){
+			throw  new \Exception( 'Can only add 100 members at a time.' );
+		}
 		foreach ( $emails as $email )
 		{
 			$this->members[] = $this->addMember( $email, $audienceName );
