@@ -14,7 +14,7 @@ class PackageServiceProvider extends ServiceProvider {
 	/** @var  TwitterAds  */
 	public static $api;
 	protected $packageServices = [
-		PackageServiceProvider::class
+		TailoredAudienceServiceProvider::class
 	];
 
 	public function boot()
